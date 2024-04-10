@@ -6,13 +6,11 @@ const dbConfig = {
   host: 'localhost',
   user: 'root',
   password: 'atlasluna',
-  database: 'employer_tracker_db' // Your database name
+  database: 'employer_tracker_db'
 };
 
-// Read the seed SQL file
 const seedSQL = fs.readFileSync('./db/seed.sql', 'utf8');
 
-// Function to seed the database
 async function seedDatabase() {
   try {
     // Create a connection to the database
